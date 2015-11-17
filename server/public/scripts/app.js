@@ -3,12 +3,12 @@ $(document).ready(function() {
 });
 
 function gameSearch() {
-    var apikey = "ca5d63fdb921e2570069eb8267389c4a9260227a";
+    var apikey = "80b5c075916a28c201e49507314e858c26537c06";
     var baseUrl = "http://www.giantbomb.com/api";
 
     // construct our URL
-    var gameSearchURL = baseUrl + '/search/?api_key=' + apikey + '&format=jsonp&limit=50';
-    var query = 'Batman & Robin';
+    var gameSearchURL = baseUrl + '/search/?api_key=' + apikey + '&format=jsonp&limit=35';
+    var query = 'Batman';
 
     var q = gameSearchURL + '&query=' + encodeURI(query);
     console.log(q);

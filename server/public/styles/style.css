@@ -1,0 +1,10 @@
+img {
+    max-height: 150px;
+    width: auto;
+}
+
+.well {
+    height: 400px;
+    overflow: scroll;
+
+}

@@ -2,7 +2,7 @@
 <html ng-app="myApp">
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>NANANANANANANANA</title>
     <link rel="stylesheet" href="/vendors/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/style.css">
     <!-- Angular -->
@@ -10,10 +10,17 @@
     <script type="text/javascript" src="/scripts/ang_app.js"></script>
 </head>
 <body>
-    <h1>Angular Data APIs!</h1>
-    <div ng-controller="APIController">
-
-
+    <div class="container">
+        <h1>Angular Data APIs!</h1>
+        <div ng-controller="APIController">
+            <div class='well text-center col-md-4' ng-repeat="result in results">
+                <h2>{{result.name}}</h2>
+                <img ng-src="{{result.image.small_url}}">
+                <h6>{{result.deck}}</h6>
+                <p>Released: {{result.original_release_date | date:'MM-dd-yyyy'}}</p>
+                <a ng-href="{{result.site_detail_url}}">VISIT GIANTBOMB FOR MORE INFO</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
